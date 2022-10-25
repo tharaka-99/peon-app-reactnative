@@ -52,9 +52,6 @@ function LogoTitle() {
         }
         onRequestClose={hideMenu}
       >
-        {/* <MenuItem onPress={() => navigation.navigate("UserList")}>
-          Menu item 1
-        </MenuItem> */}
         <MenuItem
           onPress={() => {
             const auth = getAuth();
@@ -71,20 +68,8 @@ function LogoTitle() {
 export default function Home() {
   return (
     <View style={{ flex: 1 }}>
-      {/* <WelcomeScreen /> */}
-      {/* <UserRegisterScreen /> */}
-      {/* <FlexList /> */}
       <NavigationContainer>
-        <Stack.Navigator
-        // screenOptions={{
-        //   headerRight: () => (
-        //     <Button
-        //       title="SignOut"
-        //       onPress={() => setModalOpen(true)}
-        //     ></Button>
-        //   ),
-        // }}
-        >
+        <Stack.Navigator>
           <Stack.Screen name="Login" component={PeonLogin} />
           <Stack.Screen name="Create Account" component={CreateAcount} />
           <Stack.Screen name="Register" component={PeonRegister} />
