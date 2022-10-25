@@ -15,5 +15,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+//add from the github web
 
 export const db = getFirestore(app);
