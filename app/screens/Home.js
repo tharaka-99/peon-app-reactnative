@@ -63,33 +63,10 @@ function LogoTitle() {
         >
           Sign Out
         </MenuItem>
-        {/* <MenuItem disabled>Disabled item</MenuItem>
-        <MenuDivider />
-        <MenuItem onPress={hideMenu}>Menu item 4</MenuItem> */}
       </Menu>
     </View>
   );
 }
-
-// function LogoTitle() {
-//   const navigation = useNavigation();
-//   const signOutFromStaff = () => {
-//     const auth = getAuth();
-//     auth.signOut().then(() => navigation.navigate("Login"));
-//   };
-
-//   return (
-//     <View>
-//       <Button
-//         onPress={() => {
-//           signOutFromStaff();
-//         }}
-//         title="SignOut"
-//         color="#00cc00"
-//       />
-//     </View>
-//   );
-// }
 
 export default function Home() {
   return (
@@ -129,14 +106,6 @@ export default function Home() {
           />
           <Stack.Screen name="Registered Staff Members" component={StaffList} />
           <Stack.Screen name="Registered Peon Members" component={PeonList} />
-          {/* <Stack.Screen
-            name="Staff page"
-            component={StaffHome}
-            options={{
-              headerBackVisible: false,
-              headerRight: () => <LogoTitle />,
-            }}
-          /> */}
           <Stack.Screen
             name="Staff Home"
             component={StaffHomePage}
